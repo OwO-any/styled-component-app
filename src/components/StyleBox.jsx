@@ -22,7 +22,7 @@ const StyleBox = () => {
       <Container>
         {
           boxColor.map((color) => (
-            <Box borderColor={ color }>{ getBoxName(color) }</Box>
+            <Box key={ color } borderColor={ color }>{ getBoxName(color) }</Box>
           ))
         }
       </Container>
